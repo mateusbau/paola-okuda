@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Paola Okuda | Terapeuta Ocupacional Pediátrica · UNIFESP</title>
+  <meta name="description" content="Dra. Paola Okuda — Terapeuta Ocupacional Pediátrica, Doutora e Pós-Doutora em Ciências pela UNIFESP. Especialista em TDAH, TEA, DCD e transtornos de aprendizagem." />
+  <meta property="og:title" content="Dra. Paola Okuda | Terapeuta Ocupacional Pediátrica" />
+  <meta property="og:description" content="Referência em intervenção baseada em evidências para crianças e adolescentes. Doutora UNIFESP · Formação UCL Londres." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple:     #7B5EA7;
+      --purple-dk:  #5C4080;
+      --gold:       #C9A84C;
+      --gold-lt:    #E8C97A;
+      --blue:       #3BAED9;
+      --blue-lt:    #d0eef8;
+      --white:      #FFFFFF;
+      --bg-alt:     #F7F5FB;
+      --bg-hero:    #EDE8F5;
+      --text:       #3A3A3A;
+      --text-soft:  #6B6B6B;
+      --border:     #E2DBF0;
+      --radius:     14px;
+      --shadow:     0 4px 24px rgba(91,64,128,.10);
+      --shadow-md:  0 8px 40px rgba(91,64,128,.15);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); line-height: 1.65; overflow-x: hidden; }
+
+    h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+    h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 700; color: var(--purple-dk); }
+    h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700; color: var(--purple-dk); }
+    h3 { font-size: 1.15rem; font-weight: 600; color: var(--purple-dk); }
+    p  { color: var(--text-soft); }
+
+    .section-label {
+      display: inline-block; font-size: .78rem; font-weight: 600;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--blue); margin-bottom: .6rem;
+    }
+    .section-title { margin-bottom: .6rem; }
+    .section-sub { font-size: 1.05rem; color: var(--text-soft); margin-bottom: 2.5rem; max-width: 560px; }
+
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 90px 0; position: relative; }
+    section:nth-child(even) { background: var(--bg-alt); }
+
+    /* ─── REVEAL ─── */
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: .1s; } .reveal-d2 { transition-delay: .2s; }
+    .reveal-d3 { transition-delay: .3s; } .reveal-d4 { transition-delay: .4s; }
+    .reveal-d5 { transition-delay: .5s; } .reveal-d6 { transition-delay: .6s; }
+
+    /* ─── NAV ─── */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--white); transition: box-shadow .3s; }
+    nav.scrolled { box-shadow: 0 2px 20px rgba(91,64,128,.12); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; max-width: 1160px; margin: 0 auto; }
+    .nav-logo { text-decoration: none; }
+    .nav-logo-img { height: 46px; width: auto; display: block; }
+    .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; }
+    .nav-links a { text-decoration: none; font-size: .88rem; font-weight: 600; color: var(--purple-dk); transition: color .2s; position: relative; padding-bottom: 3px; }
+    .nav-links a::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background: var(--blue); border-radius: 2px; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
+    .nav-links a:hover { color: var(--blue); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .nav-links a.active { color: var(--blue); }
+    .nav-links a.active::after { transform: scaleX(1); }
+    .btn-nav { background: var(--purple); color: var(--white) !important; padding: 9px 20px !important; border-radius: 8px; font-weight: 600 !important; transition: background .2s !important; display: inline-flex !important; align-items: center !important; line-height: 1 !important; }
+    .btn-nav::after { display: none !important; }
+    .btn-nav:hover { background: var(--blue) !important; color: var(--white) !important; }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; font-size: 1.4rem; color: var(--purple-dk); }
+    .mobile-menu { display: none; flex-direction: column; gap: 0; background: var(--white); border-top: 1px solid var(--border); }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { padding: 14px 24px; text-decoration: none; font-size: .95rem; font-weight: 600; color: var(--purple-dk); border-bottom: 1px solid var(--border); transition: background .2s; }
+    .mobile-menu a:hover { background: var(--bg-alt); color: var(--blue); }
+    .mobile-menu .btn-nav-mobile { margin: 12px 24px 16px; padding: 12px; background: var(--purple); color: var(--white) !important; text-align: center; border-radius: 8px; font-weight: 600; }
+
+    /* ─── BUTTONS ─── */
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 10px; font-size: .95rem; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: all .25s; }
+    .btn-primary { background: var(--purple); color: var(--white); }
+    .btn-primary:hover { background: var(--purple-dk); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .btn-outline { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
+    .btn-outline:hover { background: var(--blue); color: var(--white); transform: translateY(-2px); }
+    .btn-outline-gold { background: transparent; color: var(--gold); border: 2px solid var(--gold); }
+    .btn-outline-gold:hover { background: var(--gold); color: var(--white); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .btn-gold { background: var(--gold); color: var(--white); }
+    .btn-gold:hover { background: var(--gold-lt); color: var(--purple-dk); transform: translateY(-2px); }
+
+    /* ─── SLOGAN ─── */
+    .slogan-box { position: relative; padding: 22px 52px; text-align: left; margin-bottom: 1.8rem; }
+    .slogan-corner { position: absolute; width: 26px; height: 26px; }
+    .slogan-corner.tl { top: 0; left: 0; border-top: 2px solid var(--gold); border-left: 2px solid var(--gold); }
+    .slogan-corner.tr { top: 0; right: 0; border-top: 2px solid var(--gold); border-right: 2px solid var(--gold); }
+    .slogan-corner.bl { bottom: 0; left: 0; border-bottom: 2px solid var(--gold); border-left: 2px solid var(--gold); }
+    .slogan-corner.br { bottom: 0; right: 0; border-bottom: 2px solid var(--gold); border-right: 2px solid var(--gold); }
+    .slogan-label { font-size: .7rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.6rem; }
+    .slogan-text { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 700; font-style: italic; color: var(--purple-dk); line-height: 1.38; margin: 0; }
+    .slogan-text em { color: var(--gold); font-style: italic; }
+    @media (max-width: 600px) { .slogan-box { padding: 32px 24px; } }
+
+    /* ─── HERO ─── */
+    #inicio { padding-top: 120px; padding-bottom: 90px; background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-hero) 100%); }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 60px; }
+    .hero-title { margin-bottom: 1.4rem; }
+    .hero-title .line1 { display: block; font-size: clamp(1.1rem, 2.2vw, 1.45rem); font-weight: 600; font-style: italic; color: var(--purple); letter-spacing: .04em; margin-bottom: .35rem; }
+    .hero-title .line2 { display: block; font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 700; line-height: 1.08; color: var(--purple-dk); }
+    .hero-title em { font-style: italic; color: var(--gold); position: relative; }
+    .hero-title em::after { content: ''; position: absolute; bottom: 1px; left: 0; right: 0; height: 2px; background: var(--gold); border-radius: 2px; transform-origin: left; animation: slideUnderline 1.2s cubic-bezier(.25,.8,.25,1) .9s both; }
+    .hero-subtitle { font-size: 1.05rem; color: #2a2a2a; margin-bottom: 1.8rem; max-width: 520px; }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 2.2rem; }
+    .badge { display: inline-flex; align-items: center; gap: 7px; background: var(--white); border: 1px solid var(--border); padding: 7px 14px; border-radius: 50px; font-size: .82rem; font-weight: 500; color: var(--text); box-shadow: 0 2px 8px rgba(91,64,128,.07); transition: transform .25s, box-shadow .25s; }
+    .badge:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(91,64,128,.14); }
+    .badge i { color: var(--gold); font-size: .9rem; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+    .hero-image { display: flex; justify-content: center; align-items: center; }
+    .hero-circle-wrap { position: relative; width: 460px; height: 500px; display: flex; justify-content: center; align-items: center; animation: floatY 6s ease-in-out infinite; }
+    .hero-circle-ring { position: absolute; width: 394px; height: 394px; border-radius: 50%; border: 2px solid rgba(201,168,76,.55); animation: pulseRing 4s ease-in-out infinite; }
+    .hero-circle-ring::before { content: ''; position: absolute; inset: -8px; border-radius: 50%; border: 1px solid rgba(91,64,128,.18); }
+    .hero-circle-photo { width: 380px; height: 380px; border-radius: 50%; overflow: hidden; border: 4px solid var(--white); box-shadow: 0 0 0 3px var(--purple), 0 24px 64px rgba(91,64,128,.38), 0 0 80px rgba(91,64,128,.14); }
+    .hero-circle-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+    .hero-circle-badge { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 8px; background: var(--white); border: 1.5px solid var(--border); border-radius: 50px; padding: 9px 20px; font-size: .82rem; font-weight: 600; color: var(--purple-dk); white-space: nowrap; box-shadow: 0 6px 20px rgba(91,64,128,.13); }
+    .hero-circle-badge i { color: var(--gold); }
+
+    /* ─── CARD ICON (ALL GOLD) ─── */
+    .card-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--gold); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; flex-shrink: 0; }
+    .card-icon i { color: var(--white); font-size: 1.25rem; }
+
+    /* ─── SOBRE ─── */
+    .sobre-full .section-header { margin-bottom: 2rem; }
+    .sobre-full > p { font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; color: #2a2a2a; }
+    .sobre-grid { display: grid; grid-template-columns: 1fr 360px; gap: 64px; align-items: center; margin-bottom: 56px; }
+    .sobre-text .section-header { margin-bottom: 2rem; }
+    .sobre-text p { font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; color: #2a2a2a; }
+    .sobre-photo-wrap { position: relative; }
+    .sobre-photo-wrap::after { content: ''; position: absolute; inset: 16px -16px -16px 16px; border-radius: 22px; background: linear-gradient(135deg,var(--purple),var(--gold)); opacity: .16; z-index: 0; }
+    .sobre-photo-wrap img { position: relative; z-index: 1; width: 100%; height: 480px; object-fit: cover; object-position: center top; border-radius: 20px; box-shadow: var(--shadow-md); display: block; }
+
+    /* ─── TRAJECTORY CAROUSEL ─── */
+    .traj-wrap { margin-top: 3.5rem; position: relative; }
+    .traj-outer {
+      overflow: hidden; cursor: grab; user-select: none; -webkit-user-select: none;
+      width: 100%; padding: 0; position: relative;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 9%, black 91%, transparent 100%);
+      mask-image:         linear-gradient(to right, transparent 0%, black 9%, black 91%, transparent 100%);
+    }
+
+    .traj-arrow {
+      position: absolute; top: 55px; transform: translateY(-50%); z-index: 20;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--white); border: 1.5px solid var(--border);
+      box-shadow: 0 2px 12px rgba(91,64,128,.18);
+      color: var(--purple-dk); font-size: .82rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background .2s, color .2s, opacity .3s, transform .2s, box-shadow .2s;
+    }
+    .traj-arrow:hover:not(:disabled) { background: var(--purple); color: var(--white); box-shadow: 0 4px 18px rgba(91,64,128,.32); transform: translateY(-50%) scale(1.1); }
+    .traj-arrow:disabled { cursor: default; }
+    .traj-arrow-left  { left: 2px; }
+    .traj-arrow-right { right: 2px; }
+    .traj-inner { display: flex; flex-direction: column; will-change: transform; }
+    .traj-dna-zone { position: relative; flex-shrink: 0; }
+    .traj-cards-zone { display: flex; flex-shrink: 0; }
+
+    .traj-icon-circle {
+      width: 58px; height: 58px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 2px 14px rgba(123,94,167,.25);
+      transition: transform .22s, box-shadow .22s; position: relative; z-index: 3;
+    }
+    .traj-icon-circle:hover { transform: scale(1.12); box-shadow: 0 6px 24px rgba(123,94,167,.4); }
+    .traj-icon-circle svg { width: 22px; height: 22px; stroke: #fff; fill: none; stroke-width: 1.75; pointer-events: none; }
+
+    .traj-card {
+      display: flex; flex-direction: column; flex: 1;
+      background: var(--white); border-radius: 14px;
+      border: 1px solid var(--border); box-shadow: 0 3px 16px rgba(91,64,128,.10);
+      margin: 0 8px; overflow: visible;
+    }
+    .traj-card-head {
+      padding: 14px 16px 12px; text-align: center;
+      border-bottom: 1px solid var(--border); background: var(--bg-alt);
+    }
+    .traj-card-body { padding: 12px 16px 16px; display: flex; flex-direction: column; gap: 5px; flex: 1; }
+    .traj-period { font-size: .63rem; font-weight: 700; color: var(--text-soft); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px; }
+    .traj-title { font-size: .92rem; font-weight: 700; color: var(--purple-dk); font-family: 'Playfair Display', serif; line-height: 1.25; hyphens: none; word-break: keep-all; }
+    .traj-subtitle { font-size: .75rem; color: var(--purple); font-style: italic; line-height: 1.35; }
+    .traj-desc { font-size: .73rem; color: var(--text-soft); line-height: 1.6; margin-top: 2px; }
+
+    .traj-hint {
+      text-align: center; margin-top: 16px; font-size: .75rem; color: var(--text-soft);
+      display: flex; align-items: center; justify-content: center; gap: 6px; opacity: .7;
+    }
+
+    @keyframes dnaGlow {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: .65; }
+    }
+    @keyframes floatY {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-10px); }
+    }
+    @keyframes pulseRing {
+      0%, 100% { opacity: .6; transform: scale(1); }
+      50%       { opacity: 1;  transform: scale(1.045); }
+    }
+    @keyframes slideUnderline {
+      from { transform: scaleX(0); opacity: 0; }
+      to   { transform: scaleX(1); opacity: 1; }
+    }
+    @keyframes waPulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,.4); }
+      50%       { box-shadow: 0 4px 28px rgba(37,211,102,.65), 0 0 0 10px rgba(37,211,102,.1); }
+    }
+
+    /* ─── ATUAÇÃO CARDS ─── */
+    .atua-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
+    .atua-card {
+      background: var(--white); border-radius: 18px;
+      border: 1.5px solid var(--border);
+      border-left: 3px solid transparent;
+      box-shadow: 0 4px 24px rgba(91,64,128,.07);
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .atua-card:hover:not(.active) {
+      transform: translateY(-6px);
+      border-left-color: var(--gold);
+      box-shadow: 0 12px 32px rgba(201,168,76,.15), 0 4px 16px rgba(91,64,128,.12);
+    }
+    .atua-card.active {
+      border-color: var(--purple);
+      box-shadow: 0 16px 60px rgba(91,64,128,.28);
+      transform: translateY(-6px);
+    }
+    .atua-card-header {
+      padding: 38px 28px 26px; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 14px;
+      user-select: none; position: relative; overflow: hidden;
+    }
+    .atua-card-header::before {
+      content: '';
+      position: absolute; bottom: -18px; right: 10px;
+      font-size: 6.5rem; font-weight: 900;
+      font-family: 'Playfair Display', serif;
+      color: var(--purple-dk); opacity: .06;
+      line-height: 1; pointer-events: none; z-index: 0;
+    }
+    .atua-icon {
+      width: 72px; height: 72px; border-radius: 22px;
+      display: flex; align-items: center; justify-content: center; font-size: 1.7rem;
+      box-shadow: 0 4px 20px rgba(91,64,128,.22);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .atua-card:hover .atua-icon,
+    .atua-card.active .atua-icon { transform: scale(1.1); box-shadow: 0 10px 30px rgba(91,64,128,.35); }
+    .atua-card-title {
+      font-family: 'Playfair Display', serif; font-size: 1.22rem; font-weight: 700;
+      color: var(--purple-dk); line-height: 1.25; margin: 0;
+    }
+    .atua-card-tagline { font-size: .84rem; color: var(--text-soft); line-height: 1.55; }
+    .atua-toggle {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: .76rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+      color: var(--purple); padding: 7px 18px; border-radius: 50px;
+      border: 1.5px solid var(--border); background: var(--bg-alt);
+      transition: background .25s, color .25s, border-color .25s;
+    }
+    .atua-toggle i { font-size: .7rem; transition: transform .38s ease; }
+    .atua-card:hover .atua-toggle { background: var(--white); border-color: var(--purple); }
+    .atua-card.active .atua-toggle { background: var(--purple); color: var(--white); border-color: var(--purple); }
+    .atua-card.active .atua-toggle i { transform: rotate(180deg); }
+
+    /* ─── ATUAÇÃO DETAIL PANEL ─── */
+    .atua-detail {
+      display: none;
+      margin-top: 40px;
+      padding: 36px 40px 32px;
+      background: var(--white);
+      border-radius: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .42s ease, transform .42s ease;
+    }
+    .atua-detail.open    { display: block; }
+    .atua-detail.visible { opacity: 1; transform: translateY(0); }
+    .atua-detail-head {
+      display: flex; align-items: center; gap: 16px;
+      margin-bottom: 28px; padding-bottom: 22px; border-bottom: 1px solid var(--border);
+    }
+    .atua-detail-dicon {
+      width: 54px; height: 54px; border-radius: 16px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 1.4rem;
+    }
+    .atua-detail-label { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-soft); margin-bottom: 5px; }
+    .atua-detail-dtitle { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--purple-dk); }
+    .atua-sub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .atua-sub-card {
+      background: var(--bg-alt);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      border-left: 4px solid;
+      padding: 16px 18px;
+      display: flex; align-items: flex-start; gap: 13px;
+      opacity: 0; transform: translateY(16px);
+      transition: opacity .38s ease, transform .38s ease, box-shadow .25s;
+    }
+    .atua-sub-card:hover { box-shadow: 0 6px 22px rgba(91,64,128,.13); transform: translateY(-2px) !important; }
+    .atua-sub-card.vis { opacity: 1; transform: translateY(0); }
+    .atua-sub-ico {
+      width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: .88rem;
+    }
+    .atua-sub-ico i { color: #fff; }
+    .atua-sub-body h4 { font-size: .89rem; font-weight: 700; color: var(--purple-dk); margin-bottom: 4px; line-height: 1.3; }
+    .atua-sub-body p { font-size: .76rem; color: var(--text-soft); line-height: 1.52; margin: 0; }
+    .atua-detail-cta { display: flex; justify-content: center; padding-top: 4px; }
+
+    /* ─── DEPOIMENTOS REDESIGN ─── */
+    #depoimentos { background: var(--bg-hero); }
+
+    .depo-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+    .depo-rating-sub {
+      font-size: .9rem;
+      color: var(--text-soft);
+      margin-bottom: 2rem;
+    }
+    .depo-italic-pitch {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--purple);
+      line-height: 1.75;
+      margin-bottom: 2.4rem;
+      max-width: 360px;
+    }
+    .depo-nav-row {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .depo-btn-next {
+      background: var(--purple-dk);
+      color: var(--white);
+      border-radius: 50px;
+    }
+    .depo-btn-next:hover {
+      background: var(--purple);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .depo-counter {
+      font-size: .92rem;
+      font-weight: 500;
+      color: var(--text-soft);
+    }
+    .depo-stack-wrap {
+      position: relative;
+      margin: 0 18px 20px;
+    }
+    .depo-bg-card {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--white);
+      border-radius: 20px;
+      box-shadow: 0 4px 18px rgba(91,64,128,.07);
+      border: 1px solid var(--border);
+    }
+    .depo-bg-3 {
+      z-index: 1; opacity: 0.38;
+      transform: rotate(4deg) translateY(6px);
+    }
+    .depo-bg-2 {
+      z-index: 2; opacity: 0.62;
+      transform: rotate(1.8deg) translateY(3px);
+    }
+    .depo-front-card {
+      position: relative;
+      z-index: 3;
+      background: var(--white);
+      border-radius: 20px;
+      padding: 36px 36px 28px;
+      box-shadow: 0 8px 40px rgba(91,64,128,.10);
+      border: 1px solid rgba(91,64,128,.06);
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .depo-mini-top { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px; }
+    .depo-mini-line { width: 32px; height: 3px; background: linear-gradient(90deg, var(--purple), var(--gold)); border-radius: 2px; flex-shrink: 0; }
+    .depo-stars-new { color: #C9A84C; font-size: 1rem; letter-spacing: 2px; }
+    .depo-mini-text { font-family: 'Playfair Display', serif; font-size: 1.12rem; font-style: italic; color: var(--purple-dk); line-height: 1.72; margin-bottom: 22px; text-align: center; }
+    .depo-mini-author { display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .depo-mini-dash { color: var(--gold); font-weight: 700; font-size: 1rem; }
+    .depo-mini-name { font-size: .88rem; font-weight: 600; color: var(--text-soft); }
+    .depo-google-badge { display: flex; align-items: center; gap: 5px; font-size: .72rem; color: var(--text-soft); }
+    .depo-timer-wrap {
+      height: 3px;
+      background: rgba(59,174,217,.18);
+      border-radius: 3px;
+      overflow: hidden;
+      margin-right: 28px;
+    }
+    .depo-timer-bar {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 3px;
+      width: 0%;
+    }
+
+    /* ─── CONTATO ─── */
+    #contato { background: var(--white); }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+    .btn-whatsapp { background: #25D366; color: var(--white); }
+    .btn-whatsapp:hover { background: #1db954; transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      transition: background .18s;
+    }
+    .contact-row-icon {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-row-icon i { color: var(--white); font-size: .9rem; }
+    .contact-row-body { flex: 1; }
+    .contact-row-label {
+      font-size: .68rem; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--text-soft); margin-bottom: 2px;
+    }
+    .contact-row-value {
+      font-size: .95rem; font-weight: 500;
+      color: var(--purple-dk); line-height: 1.3;
+    }
+    .contact-row-arrow { color: var(--text-soft); font-size: .78rem; transition: transform .18s; }
+    .contact-row:hover .contact-row-arrow { transform: translateX(4px); color: var(--purple); }
+    .contact-row:hover .contact-row-value { color: var(--purple); }
+    .contact-map-wrap {
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-md);
+    }
+    .contact-map-wrap iframe { display: block; width: 100%; height: 460px; border: 0; }
+
+    /* ─── FOOTER ─── */
+    footer { background: var(--purple-dk); color: rgba(255,255,255,.7); padding: 40px 0; text-align: center; }
+    footer p { font-size: .85rem; margin-top: 12px; }
+    .footer-links { display: flex; justify-content: center; gap: 20px; margin: 16px 0; list-style: none; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,.6); text-decoration: none; font-size: .85rem; transition: color .2s; }
+    .footer-links a:hover { color: var(--gold-lt); }
+    .footer-social { display: flex; justify-content: center; gap: 14px; margin-top: 16px; }
+    .footer-social a { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,.1); color: var(--white); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: background .2s; }
+    .footer-social a:hover { background: var(--blue); }
+
+    /* ─── WHATSAPP FLOAT ─── */
+    .whatsapp-float { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 9999; padding: .75rem 1.25rem; border-radius: 2rem; background: #25D366; color: var(--white); display: flex; align-items: center; gap: 8px; font-size: .9rem; font-weight: 600; box-shadow: 0 4px 20px rgba(37,211,102,.4); text-decoration: none; transition: transform .25s, box-shadow .25s; animation: waPulse 2.8s ease-in-out infinite; white-space: nowrap; }
+    .whatsapp-float i { font-size: 1.2rem; }
+    .whatsapp-float:hover { transform: scale(1.05); box-shadow: 0 6px 32px rgba(37,211,102,.65); animation: none; }
+    @media (max-width: 480px) { .whatsapp-float span { display: none; } .whatsapp-float { padding: .9rem; border-radius: 50%; } }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .service-grid   { grid-template-columns: repeat(2, 1fr); }
+      .cursos-sub-grid{ grid-template-columns: 1fr; }
+    }
+    @media (max-width: 900px) {
+      .depo-layout { grid-template-columns: 1fr; gap: 44px; }
+      .depo-italic-pitch { max-width: 100%; }
+      .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+      .contact-map-wrap iframe { height: 300px; }
+    }
+    @media (max-width: 768px) {
+      section { padding: 60px 0; }
+      #inicio { padding-top: 100px; }
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-image { order: -1; }
+      .hero-circle-wrap { width: 310px; height: 350px; }
+      .hero-circle-photo { width: 260px; height: 260px; }
+      .hero-circle-ring { width: 272px; height: 272px; }
+      .hero-circle-badge { font-size: .74rem; padding: 7px 14px; }
+      .atua-grid { grid-template-columns: 1fr; }
+      .atua-card.active { transform: none; }
+      .atua-detail { padding: 24px 20px 20px; }
+      .atua-sub-grid { grid-template-columns: 1fr; }
+      .sobre-grid { grid-template-columns: 1fr; gap: 36px; }
+      .sobre-photo-wrap { max-width: 300px; margin: 0 auto; }
+      .sobre-photo-wrap img { height: 340px; }
+      .sobre-photo-wrap::after { display: none; }
+      .depo-stack-wrap { margin: 0 12px 16px; }
+      .depo-timer-wrap { margin: 0 12px; }
+      .depo-front-card { padding: 24px 22px 20px; }
+    }
+    @media (max-width: 480px) {
+      .hero-badges { flex-direction: column; }
+      .hero-ctas   { flex-direction: column; }
+      .hero-ctas .btn { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-logo">
+      <img src="img/logo.png" alt="Paola Okuda — Terapia Ocupacional" class="nav-logo-img">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#atuacao">Atuação</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="https://wa.me/5515981863023" class="btn-nav" target="_blank" rel="noopener">Agendar Consulta</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
+      <i class="fas fa-bars" id="menu-icon"></i>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#inicio"      onclick="closeMenu()">Início</a>
+    <a href="#atuacao"     onclick="closeMenu()">Atuação</a>
+    <a href="#sobre"       onclick="closeMenu()">Sobre</a>
+    <a href="#depoimentos" onclick="closeMenu()">Depoimentos</a>
+    <a href="#contato"     onclick="closeMenu()">Contato</a>
+    <a href="https://wa.me/5515981863023" class="btn-nav-mobile" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i> Agendar Consulta
+    </a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="inicio">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="slogan-box hero-slogan reveal">
+          <span class="slogan-corner tl"></span>
+          <span class="slogan-corner tr"></span>
+          <span class="slogan-corner bl"></span>
+          <span class="slogan-corner br"></span>
+          <p class="slogan-label">SAÚDE · EDUCAÇÃO · CIÊNCIA</p>
+          <h1 class="slogan-text">Ciência que acolhe,<br><em>desenvolvimento</em> que evolui.</h1>
+        </div>
+        <p class="hero-subtitle reveal reveal-d1">
+          Dra. Paola Okuda é Doutora em Ciências pela UNIFESP e referência em intervenção baseada em evidências para crianças e adolescentes com TDAH, TEA, transtornos de aprendizagem e atrasos do desenvolvimento.
+        </p>
+        <div class="hero-badges reveal reveal-d2">
+          <span class="badge"><i class="fas fa-graduation-cap"></i> Doutora e Pós-Doutora UNIFESP</span>
+          <span class="badge"><i class="fas fa-globe"></i> Formação Internacional — UCL Londres</span>
+          <span class="badge"><i class="fas fa-star"></i> 5,0 no Google · 47 avaliações</span>
+        </div>
+        <div class="hero-ctas reveal reveal-d3">
+          <a href="https://wa.me/5515981863023" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+          </a>
+          <a href="#sobre" class="btn btn-outline-gold">
+            Conheça mais <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image reveal reveal-d2">
+        <div class="hero-circle-wrap">
+          <div class="hero-circle-ring"></div>
+          <div class="hero-circle-photo">
+            <img src="img/paola-hero.jpeg" alt="Dra. Paola Okuda">
+          </div>
+          <div class="hero-circle-badge">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Dra. Paola Okuda</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ATUAÇÃO ═══ -->
+<section id="atuacao">
+  <div class="container">
+    <span class="section-label reveal">Atuação</span>
+    <h2 class="section-title reveal reveal-d1">Como posso ajudar?</h2>
+    <p class="section-sub reveal reveal-d2">Clique em uma área para conhecer os detalhes</p>
+
+    <div class="atua-grid reveal reveal-d3">
+
+      <!-- ── Card 1: Atuação Clínica ── -->
+      <div class="atua-card" id="card-clinica">
+        <div class="atua-card-header">
+          <div class="atua-icon" style="background:linear-gradient(135deg,var(--purple),var(--purple-dk));">
+            <i class="fas fa-stethoscope" style="color:#fff;"></i>
+          </div>
+          <h3 class="atua-card-title">Atuação Clínica</h3>
+          <p class="atua-card-tagline">Avaliação e intervenção especializada para crianças e adolescentes</p>
+          <div class="atua-toggle"><span>Saiba mais</span><i class="fas fa-chevron-down"></i></div>
+        </div>
+      </div>
+
+      <!-- ── Card 2: Cursos ── -->
+      <div class="atua-card" id="card-cursos">
+        <div class="atua-card-header">
+          <div class="atua-icon" style="background:linear-gradient(135deg,var(--gold),#a87930);">
+            <i class="fas fa-chalkboard-user" style="color:#fff;"></i>
+          </div>
+          <h3 class="atua-card-title">Cursos</h3>
+          <p class="atua-card-tagline">Capacitação baseada em evidências para profissionais da saúde e educação</p>
+          <div class="atua-toggle"><span>Saiba mais</span><i class="fas fa-chevron-down"></i></div>
+        </div>
+      </div>
+
+      <!-- ── Card 3: Consultoria ── -->
+      <div class="atua-card" id="card-consultoria">
+        <div class="atua-card-header">
+          <div class="atua-icon" style="background:linear-gradient(135deg,var(--purple-dk),#2e1d4a);">
+            <i class="fas fa-magnifying-glass-chart" style="color:#fff;"></i>
+          </div>
+          <h3 class="atua-card-title">Consultoria</h3>
+          <p class="atua-card-tagline">Orientação especializada para equipes clínicas, educacionais e pesquisadores</p>
+          <div class="atua-toggle"><span>Saiba mais</span><i class="fas fa-chevron-down"></i></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="atua-detail" id="atuaDetail"></div>
+  </div>
+</section>
+
+<!-- ═══ SOBRE + TRAJETÓRIA ═══ -->
+<section id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <div class="section-header reveal">
+          <span class="section-label">Sobre &amp; Trajetória</span>
+          <h2 class="section-title">Quem é a Dra. Paola Okuda?</h2>
+        </div>
+        <p class="reveal reveal-d1">Com mais de 20 anos dedicados ao desenvolvimento infantil, a Dra. Paola Matiko Martins Okuda construiu uma trajetória única — unindo rigor científico, formação internacional e uma abordagem profundamente humana.</p>
+        <p class="reveal reveal-d2">Doutora e Pós-Doutora em Ciências pela UNIFESP, com período de pesquisa na University College London (UCL), ela atua na avaliação e intervenção de crianças e adolescentes com TDAH, TEA, Transtorno do Desenvolvimento da Coordenação (DCD), transtornos de aprendizagem, atrasos do desenvolvimento e questões de prontidão escolar.</p>
+        <p class="reveal reveal-d3">Seu propósito é integrar ciência e prática para transformar o desenvolvimento infantil, produzindo conhecimento aplicável à vida real das crianças e famílias.</p>
+      </div>
+      <div class="sobre-photo-wrap reveal reveal-d2">
+        <img src="img/paola-sobre.jpeg" alt="Dra. Paola Okuda" loading="lazy">
+      </div>
+    </div>
+
+    <!-- ═ CARROSSEL DNA ═ -->
+    <div class="traj-wrap reveal">
+      <div class="traj-outer" id="trajOuter">
+        <div class="traj-inner" id="trajInner">
+          <div class="traj-dna-zone" id="trajDnaZone"></div>
+          <div class="traj-cards-zone" id="trajCardsZone"></div>
+        </div>
+      </div>
+      <p class="traj-hint"><i class="fas fa-hand-pointer"></i> Arraste para explorar a trajetória</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DEPOIMENTOS ═══ -->
+<section id="depoimentos">
+  <div class="container">
+    <div class="depo-layout">
+      <div class="depo-left reveal">
+        <span class="section-label">Depoimentos</span>
+        <h2 class="section-title">O que dizem as famílias</h2>
+        <p class="depo-rating-sub">47 avaliações com nota 5,0 no Google</p>
+        <p class="depo-italic-pitch">Histórias reais de famílias que confiaram seu desenvolvimento à ciência e ao acolhimento.</p>
+        <div class="depo-nav-row">
+          <button class="btn depo-btn-next" id="depoNextBtn">
+            Próximo depoimento <i class="fas fa-arrow-right"></i>
+          </button>
+          <span class="depo-counter" id="depoCounter">1 / 6</span>
+        </div>
+      </div>
+      <div class="depo-right reveal reveal-d2">
+        <div class="depo-stack-wrap">
+          <div class="depo-bg-card depo-bg-3"></div>
+          <div class="depo-bg-card depo-bg-2"></div>
+          <div class="depo-front-card" id="depoFrontCard"></div>
+        </div>
+        <div class="depo-timer-wrap">
+          <div class="depo-timer-bar" id="depoTimerBar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTATO ═══ -->
+<section id="contato">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- ESQUERDA -->
+      <div class="contact-left">
+        <span class="section-label reveal">Contato</span>
+        <h2 class="section-title reveal reveal-d1">Vamos conversar?</h2>
+        <p class="section-sub reveal reveal-d2" style="margin-bottom:0;">Entre em contato para agendar uma avaliação, tirar dúvidas ou solicitar uma consultoria.</p>
+
+        <div class="contact-list reveal reveal-d3">
+          <a href="https://wa.me/5515981863023" class="contact-row" target="_blank" rel="noopener">
+            <div class="contact-row-icon" style="background:var(--purple);"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-row-body">
+              <p class="contact-row-label">WhatsApp</p>
+              <p class="contact-row-value">(15) 98186-3023</p>
+            </div>
+            <i class="fas fa-arrow-right contact-row-arrow"></i>
+          </a>
+          <a href="mailto:contato@paolaokuda.com.br" class="contact-row">
+            <div class="contact-row-icon" style="background:var(--purple);"><i class="fas fa-envelope"></i></div>
+            <div class="contact-row-body">
+              <p class="contact-row-label">E-mail</p>
+              <p class="contact-row-value">contato@paolaokuda.com.br</p>
+            </div>
+            <i class="fas fa-arrow-right contact-row-arrow"></i>
+          </a>
+          <a href="https://maps.google.com/?q=R.+José+Maria+Barbosa,+31,+Jardim+Portal+da+Colina,+Sorocaba,+SP" class="contact-row" target="_blank" rel="noopener">
+            <div class="contact-row-icon" style="background:var(--purple);"><i class="fas fa-location-dot"></i></div>
+            <div class="contact-row-body">
+              <p class="contact-row-label">Consultório</p>
+              <p class="contact-row-value">R. José Maria Barbosa, 31 — Sala 44<br>Jardim Portal da Colina, Sorocaba — SP</p>
+            </div>
+            <i class="fas fa-arrow-right contact-row-arrow"></i>
+          </a>
+          <a href="https://www.instagram.com/dra.paolaokuda/" class="contact-row" target="_blank" rel="noopener">
+            <div class="contact-row-icon" style="background:var(--purple);"><i class="fab fa-instagram"></i></div>
+            <div class="contact-row-body">
+              <p class="contact-row-label">Instagram</p>
+              <p class="contact-row-value">@dra.paolaokuda</p>
+            </div>
+            <i class="fas fa-arrow-right contact-row-arrow"></i>
+          </a>
+        </div>
+
+        <div class="reveal reveal-d4">
+          <a href="https://wa.me/5515981863023" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- DIREITA — MAPA -->
+      <div class="contact-right reveal reveal-d2">
+        <div class="contact-map-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=R.+Jos%C3%A9+Maria+Barbosa%2C+31%2C+Jardim+Portal+da+Colina%2C+Sorocaba%2C+SP%2C+18047-380&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização — R. José Maria Barbosa, 31, Sorocaba SP">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="container">
+    <div style="display:flex;justify-content:center;margin-bottom:12px;">
+      <img src="img/logo.png" alt="Paola Okuda — Terapia Ocupacional" style="height:52px;width:auto;background:#fff;padding:8px 18px;border-radius:10px;">
+    </div>
+    <ul class="footer-links">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#atuacao">Atuação</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/dra.paolaokuda/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/paola-okuda/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://wa.me/5515981863023" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p style="margin-top:20px;">© 2026 Dra. Paola Matiko Martins Okuda · Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/5515981863023" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span>Agendar consulta</span>
+</a>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<script>
+/* ── Navbar ── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 30); highlightNav(); });
+
+/* ── Mobile menu ── */
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu'), icon = document.getElementById('menu-icon');
+  const open = menu.classList.toggle('open');
+  icon.className = open ? 'fas fa-times' : 'fas fa-bars';
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('menu-icon').className = 'fas fa-bars';
+}
+
+/* ── Active nav link ── */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a:not(.btn-nav)');
+function highlightNav() {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+  navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+}
+highlightNav();
+
+/* ── Reveal on scroll ── */
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+/* ── Atuação cards – panel mode ── */
+(function setupAtuacao() {
+  const DATA = {
+    'card-clinica': {
+      icone:   'fas fa-stethoscope',
+      iconBg:  'linear-gradient(135deg,#7B5EA7,#5C4080)',
+      label:   'Atuação Clínica',
+      palette: ['#7B5EA7', '#9B7EC7', '#3BAED9'],
+      itens: [
+        { ico: 'fas fa-brain',          h: 'TDAH',                        p: 'Função executiva e desempenho escolar' },
+        { ico: 'fas fa-child',          h: 'TEA',                         p: 'Participação, autonomia e desenvolvimento socioemocional' },
+        { ico: 'fas fa-book-open',      h: 'Transtornos de Aprendizagem', p: 'Leitura, escrita e matemática' },
+        { ico: 'fas fa-person-running', h: 'DCD',                         p: 'Dificuldades motoras e dispraxia' },
+        { ico: 'fas fa-chart-line',     h: 'Atrasos no Desenvolvimento',  p: 'Motor, cognitivo e socioemocional' },
+        { ico: 'fas fa-school',         h: 'Prontidão Escolar',           p: 'Avaliação e preparação para a vida escolar' },
+      ],
+      cta: { html: '<i class="fab fa-whatsapp"></i> Agendar avaliação', href: 'https://wa.me/5515981863023', cls: 'btn-primary', tgt: '_blank' },
+    },
+    'card-cursos': {
+      icone:   'fas fa-chalkboard-user',
+      iconBg:  'linear-gradient(135deg,#C9A84C,#a87930)',
+      label:   'Cursos & Formações',
+      palette: ['#C9A84C', '#7B5EA7', '#3BAED9', '#a87930'],
+      itens: [
+        { ico: 'fas fa-laptop',           h: 'DCD na Prática',          p: 'Identificação e Intervenção (Online)' },
+        { ico: 'fas fa-school',           h: 'Prontidão Escolar',       p: 'Avaliação Baseada em Evidências (Presencial)' },
+        { ico: 'fas fa-bolt',             h: 'TDAH e Função Executiva', p: 'Prática Clínica (Workshop)' },
+        { ico: 'fas fa-microphone-lines', h: 'Palestras',               p: 'Para escolas e instituições' },
+      ],
+      cta: { html: '<i class="fas fa-envelope"></i> Solicitar informações', href: '#contato', cls: 'btn-gold', tgt: '' },
+    },
+    'card-consultoria': {
+      icone:   'fas fa-magnifying-glass-chart',
+      iconBg:  'linear-gradient(135deg,#5C4080,#2e1d4a)',
+      label:   'Consultoria',
+      palette: ['#5C4080', '#7B5EA7', '#C9A84C'],
+      itens: [
+        { ico: 'fas fa-flask',        h: 'Pesquisa e Análise de Dados', p: 'Apoio científico e publicações' },
+        { ico: 'fas fa-users',        h: 'Supervisão Clínica',          p: 'Individual ou em grupo' },
+        { ico: 'fas fa-chalkboard',   h: 'Consultoria Escolar',         p: 'Suporte pedagógico para equipes' },
+        { ico: 'fas fa-file-medical', h: 'Consultoria Científica',      p: 'Revisão de protocolos e instrumentos' },
+      ],
+      cta: { html: '<i class="fas fa-envelope"></i> Solicitar consultoria', href: '#contato', cls: 'btn-outline', tgt: '' },
+    },
+  };
+
+  const detail = document.getElementById('atuaDetail');
+  let activeId = null, hideTimer = null, staggerTimers = [];
+
+  function closeDetail() {
+    detail.classList.remove('visible');
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(() => detail.classList.remove('open'), 430);
+  }
+
+  function showDetail(cardData) {
+    clearTimeout(hideTimer);
+    staggerTimers.forEach(clearTimeout);
+    staggerTimers = [];
+
+    const headHTML =
+      `<div class="atua-detail-head">` +
+      `<div class="atua-detail-dicon" style="background:${cardData.iconBg};"><i class="${cardData.icone}" style="color:#fff;"></i></div>` +
+      `<div><p class="atua-detail-label">Saiba mais sobre</p><h3 class="atua-detail-dtitle">${cardData.label}</h3></div>` +
+      `</div>`;
+
+    let subHTML = '<div class="atua-sub-grid">';
+    cardData.itens.forEach((item, i) => {
+      const col = cardData.palette[i % cardData.palette.length];
+      subHTML +=
+        `<div class="atua-sub-card" style="border-left-color:${col};">` +
+        `<div class="atua-sub-ico" style="background:${col};"><i class="${item.ico}"></i></div>` +
+        `<div class="atua-sub-body"><h4>${item.h}</h4><p>${item.p}</p></div>` +
+        `</div>`;
+    });
+    subHTML += '</div>';
+
+    const tgtAttr = cardData.cta.tgt ? `target="${cardData.cta.tgt}" rel="noopener"` : '';
+    const ctaHTML =
+      `<div class="atua-detail-cta">` +
+      `<a href="${cardData.cta.href}" class="btn ${cardData.cta.cls}" ${tgtAttr}>${cardData.cta.html}</a>` +
+      `</div>`;
+
+    detail.classList.remove('visible');
+    detail.classList.add('open');
+    detail.innerHTML = headHTML + subHTML + ctaHTML;
+
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      detail.classList.add('visible');
+      detail.querySelectorAll('.atua-sub-card').forEach((sc, i) => {
+        const t = setTimeout(() => sc.classList.add('vis'), 60 + i * 65);
+        staggerTimers.push(t);
+      });
+      setTimeout(() => detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+    }));
+  }
+
+  document.querySelectorAll('.atua-card').forEach(card => {
+    card.querySelector('.atua-card-header').addEventListener('click', () => {
+      const id = card.id;
+      const wasActive = activeId === id;
+
+      document.querySelectorAll('.atua-card').forEach(c => {
+        c.classList.remove('active');
+        const lbl = c.querySelector('.atua-toggle span');
+        if (lbl) lbl.textContent = 'Saiba mais';
+        const ico = c.querySelector('.atua-toggle i');
+        if (ico) ico.style.transform = '';
+      });
+
+      if (wasActive) {
+        activeId = null;
+        closeDetail();
+        return;
+      }
+
+      activeId = id;
+      card.classList.add('active');
+      const lbl = card.querySelector('.atua-toggle span');
+      if (lbl) lbl.textContent = 'Fechar';
+      showDetail(DATA[id]);
+    });
+  });
+})();
+
+/* ══════════════════════════════════════════
+   CARROSSEL DE TRAJETÓRIA — DNA HELIX
+══════════════════════════════════════════ */
+(function buildTrajectory() {
+
+  const ETAPAS = [
+    { periodo: "2003 – 2007",        titulo: "Graduação",                   subtitulo: "Terapia Ocupacional – UNESP",                      descricao: "Base sólida em desenvolvimento infantil, reabilitação e inclusão.",                          icone: "graduation-cap" },
+    { periodo: "2003 – 2010",        titulo: "Formação Complementar",       subtitulo: "",                                                  descricao: "Cursos em desenvolvimento, reabilitação, inclusão e avaliação.",                             icone: "puzzle"          },
+    { periodo: "2011 – 2013",        titulo: "Especialização Internacional", subtitulo: "Educ. Especial (DCD) – Univ. of South Wales",       descricao: "Aprofundamento em dificuldades motoras e aprendizagem com visão internacional.",             icone: "globe"           },
+    { periodo: "2013 – 2015",        titulo: "Mestrado em Fonoaudiologia",  subtitulo: "UNESP",                                             descricao: "Identificação e intervenção precoce do Transtorno do Desenvolvimento da Coordenação.",       icone: "book-open"       },
+    { periodo: "2014 – 2017",        titulo: "Capacitações Científicas",    subtitulo: "",                                                  descricao: "Psicometria, avaliação de desempenho, estratégias cognitivas e análise epidemiológica.",     icone: "bar-chart-2"     },
+    { periodo: "2015 – 2018",        titulo: "Doutorado",                   subtitulo: "Psiquiatria e Psicologia Médica – UNIFESP",          descricao: "Período sanduíche na UCL, Londres. Trajetórias do desenvolvimento da infância à adolesc.", icone: "award"           },
+    { periodo: "2019 – 2025",        titulo: "Pós-Doutorado",               subtitulo: "UNIFESP",                                           descricao: "Desenvolvimento motor, prontidão escolar e habilidades cognitivas e socioemocionais.",      icone: "microscope"      },
+    { periodo: "2021",               titulo: "Atualização e Soft Skills",   subtitulo: "",                                                  descricao: "Liderança, resiliência, bandagens funcionais e integração técnica/humana.",                  icone: "brain"           },
+    { periodo: "Toda a trajetória",  titulo: "Atuação Clínica",             subtitulo: "Terapeuta Ocupacional Pediátrica",                  descricao: "Atrasos no desenvolvimento, transtornos de aprendizagem, TDAH, TEA e DCD.",                 icone: "users"           },
+    { periodo: "Contínuo",           titulo: "Disseminação do Conhecimento",subtitulo: "",                                                  descricao: "Cursos, publicações, capítulos de livros, palestras e eventos científicos.",                 icone: "megaphone"       }
+  ];
+
+  const CARD_W   = 242;
+  const N        = ETAPAS.length;
+  const TOTAL_W  = N * CARD_W;
+  const DNA_H    = 110;
+  const CY       = DNA_H / 2;
+  const AMP      = 28;
+  const PERIOD   = CARD_W * 2;
+  const SHIFT    = CARD_W / 2;
+  const NS       = 'http://www.w3.org/2000/svg';
+  const BG       = '#F7F5FB';         /* section#sobre = 4th body child (even) = --bg-alt */
+  const C_PUR    = '#7B5EA7';
+  const C_GOLD   = '#D4A843';
+  const C_BLUE   = '#3BAED9';
+
+  const outer     = document.getElementById('trajOuter');
+  const inner     = document.getElementById('trajInner');
+  const dnaZone   = document.getElementById('trajDnaZone');
+  const cardsZone = document.getElementById('trajCardsZone');
+
+  dnaZone.style.width   = TOTAL_W + 'px';
+  dnaZone.style.height  = DNA_H + 'px';
+  cardsZone.style.width = TOTAL_W + 'px';
+
+  /* ─ Helper math ─ */
+  const y1 = x => CY + AMP * Math.sin(2 * Math.PI * (x - SHIFT) / PERIOD);
+  const y2 = x => CY - AMP * Math.sin(2 * Math.PI * (x - SHIFT) / PERIOD);
+
+  function pathD(yFn, x0, x1) {
+    let d = '';
+    for (let x = Math.round(x0); x <= Math.round(x1); x++)
+      d += (x === Math.round(x0) ? 'M' : 'L') + x + ',' + yFn(x).toFixed(2);
+    return d;
+  }
+
+  /* ─ Build SVG ─ */
+  const svg = document.createElementNS(NS, 'svg');
+  svg.setAttribute('width', TOTAL_W);
+  svg.setAttribute('height', DNA_H);
+  svg.style.cssText = 'position:absolute;top:0;left:0;pointer-events:none;display:block;overflow:visible;';
+
+  /* Gradients */
+  const defs = document.createElementNS(NS, 'defs');
+  [['tG1', false], ['tG2', true]].forEach(([id, rev]) => {
+    const g = document.createElementNS(NS, 'linearGradient');
+    g.id = id;
+    g.setAttribute('x1', rev ? '100%' : '0%'); g.setAttribute('x2', rev ? '0%' : '100%');
+    g.setAttribute('y1', '0%'); g.setAttribute('y2', '0%');
+    [[0, C_PUR], [1, C_GOLD]].forEach(([off, col]) => {
+      const s = document.createElementNS(NS, 'stop');
+      s.setAttribute('offset', off); s.setAttribute('stop-color', col); g.appendChild(s);
+    });
+    defs.appendChild(g);
+  });
+  svg.appendChild(defs);
+
+  /* Rungs (connecting "steps" of the ladder) */
+  for (let x = 0; x <= TOTAL_W; x += 26) {
+    const sep = Math.abs(y1(x) - y2(x));
+    if (sep > 11) {
+      const l = document.createElementNS(NS, 'line');
+      l.setAttribute('x1', x); l.setAttribute('y1', y1(x).toFixed(2));
+      l.setAttribute('x2', x); l.setAttribute('y2', y2(x).toFixed(2));
+      l.setAttribute('stroke', 'rgba(212,168,67,.3)');
+      l.setAttribute('stroke-width', '1.5');
+      svg.appendChild(l);
+    }
+  }
+
+  /* Strand 2 — back */
+  const s2 = document.createElementNS(NS, 'path');
+  s2.setAttribute('d', pathD(y2, 0, TOTAL_W));
+  s2.setAttribute('stroke', 'url(#tG2)');
+  s2.setAttribute('stroke-width', '2.5');
+  s2.setAttribute('fill', 'none');
+  s2.setAttribute('opacity', '.78');
+  s2.style.animation = 'dnaGlow 4s ease-in-out 2s infinite';
+  svg.appendChild(s2);
+
+  /* Erase strand 2 at EVEN crossings so strand 1 passes over */
+  const ER = 20;
+  for (let c = 0; c < N; c++) {
+    if (c % 2 === 0) {
+      const er = document.createElementNS(NS, 'path');
+      er.setAttribute('d', pathD(y2, c * CARD_W + SHIFT - ER, c * CARD_W + SHIFT + ER));
+      er.setAttribute('stroke', BG);
+      er.setAttribute('stroke-width', '11');
+      er.setAttribute('fill', 'none');
+      svg.appendChild(er);
+    }
+  }
+
+  /* Strand 1 — front */
+  const s1 = document.createElementNS(NS, 'path');
+  s1.setAttribute('d', pathD(y1, 0, TOTAL_W));
+  s1.setAttribute('stroke', 'url(#tG1)');
+  s1.setAttribute('stroke-width', '3');
+  s1.setAttribute('fill', 'none');
+  s1.style.animation = 'dnaGlow 4s ease-in-out infinite';
+  svg.appendChild(s1);
+
+  /* Erase strand 1 at ODD crossings so strand 2 passes over */
+  for (let c = 0; c < N; c++) {
+    if (c % 2 === 1) {
+      const er = document.createElementNS(NS, 'path');
+      er.setAttribute('d', pathD(y1, c * CARD_W + SHIFT - ER, c * CARD_W + SHIFT + ER));
+      er.setAttribute('stroke', BG);
+      er.setAttribute('stroke-width', '11');
+      er.setAttribute('fill', 'none');
+      svg.appendChild(er);
+    }
+  }
+
+  /* Nucleotide dots */
+  for (let x = 8; x < TOTAL_W; x += 20) {
+    [[y1, C_PUR], [y2, C_GOLD]].forEach(([yFn, col]) => {
+      const c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', x); c.setAttribute('cy', yFn(x).toFixed(2));
+      c.setAttribute('r', '2.5'); c.setAttribute('fill', col); c.setAttribute('opacity', '.48');
+      svg.appendChild(c);
+    });
+  }
+
+  dnaZone.appendChild(svg);
+
+  /* ─ Icon circles ─ */
+  ETAPAS.forEach((etapa, i) => {
+    const wrap = document.createElement('div');
+    wrap.style.cssText = `position:absolute;top:0;left:${i * CARD_W}px;width:${CARD_W}px;height:${DNA_H}px;display:flex;align-items:center;justify-content:center;z-index:3;`;
+    const circle = document.createElement('div');
+    circle.className = 'traj-icon-circle';
+    circle.style.background = i % 2 === 0 ? C_PUR : C_GOLD;
+    const ico = document.createElement('i');
+    ico.setAttribute('data-lucide', etapa.icone);
+    circle.appendChild(ico);
+    wrap.appendChild(circle);
+    dnaZone.appendChild(wrap);
+  });
+
+  /* ─ Cards ─ */
+  ETAPAS.forEach((etapa, i) => {
+    const slot = document.createElement('div');
+    slot.style.cssText = `width:${CARD_W}px;padding-top:0;flex-shrink:0;display:flex;flex-direction:column;align-items:center;`;
+    const accentColor = i % 2 === 0 ? C_PUR : C_GOLD;
+    const conn = document.createElement('div');
+    conn.style.cssText = `width:2px;height:10px;background:${accentColor};border-radius:1px;opacity:.65;flex-shrink:0;`;
+    slot.appendChild(conn);
+    const card = document.createElement('div');
+    card.className = 'traj-card';
+    card.style.borderTop = `3px solid ${accentColor}`;
+    card.innerHTML =
+      `<div class="traj-card-head">` +
+      `<p class="traj-period">${etapa.periodo}</p>` +
+      `<p class="traj-title">${etapa.titulo}</p>` +
+      `</div>` +
+      `<div class="traj-card-body">` +
+      (etapa.subtitulo ? `<p class="traj-subtitle">${etapa.subtitulo}</p>` : '') +
+      `<p class="traj-desc">${etapa.descricao}</p>` +
+      `</div>`;
+    slot.appendChild(card);
+    cardsZone.appendChild(slot);
+  });
+
+  /* ─ Init Lucide icons ─ */
+  if (typeof lucide !== 'undefined') lucide.createIcons();
+
+  /* ─ Drag + momentum ─ */
+  let isDrag = false, startX = 0, curX = 0, velX = 0, lastX = 0, rafId = null;
+
+  function getMinX() { return Math.min(0, -(TOTAL_W - outer.clientWidth)); }
+  function applyX(x) {
+    curX = Math.max(getMinX(), Math.min(0, x));
+    inner.style.transform = `translateX(${curX}px)`;
+  }
+  function momentum() {
+    velX *= 0.92;
+    if (Math.abs(velX) < 0.35) return;
+    applyX(curX + velX);
+    rafId = requestAnimationFrame(momentum);
+  }
+
+  /* Mouse */
+  outer.addEventListener('mousedown', e => {
+    isDrag = true; startX = e.clientX - curX; lastX = e.clientX; velX = 0;
+    outer.style.cursor = 'grabbing'; cancelAnimationFrame(rafId); e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!isDrag) return;
+    velX = e.clientX - lastX; lastX = e.clientX; applyX(e.clientX - startX);
+  });
+  window.addEventListener('mouseup', () => {
+    if (!isDrag) return;
+    isDrag = false; outer.style.cursor = 'grab'; momentum();
+  });
+
+  /* Touch */
+  outer.addEventListener('touchstart', e => {
+    isDrag = true; startX = e.touches[0].clientX - curX;
+    lastX = e.touches[0].clientX; velX = 0; cancelAnimationFrame(rafId);
+  }, { passive: true });
+  outer.addEventListener('touchmove', e => {
+    if (!isDrag) return;
+    const tx = e.touches[0].clientX;
+    velX = tx - lastX; lastX = tx; applyX(tx - startX); e.preventDefault();
+  }, { passive: false });
+  outer.addEventListener('touchend', () => { isDrag = false; momentum(); });
+
+  window.addEventListener('resize', () => applyX(Math.max(getMinX(), Math.min(0, curX))));
+
+  /* ─ Setas de navegação ─ */
+  const trajWrap = outer.closest('.traj-wrap');
+
+  const btnPrev = document.createElement('button');
+  btnPrev.className = 'traj-arrow traj-arrow-left';
+  btnPrev.setAttribute('aria-label', 'Anterior');
+  btnPrev.innerHTML = '<i class="fas fa-chevron-left"></i>';
+
+  const btnNext = document.createElement('button');
+  btnNext.className = 'traj-arrow traj-arrow-right';
+  btnNext.setAttribute('aria-label', 'Próximo');
+  btnNext.innerHTML = '<i class="fas fa-chevron-right"></i>';
+
+  trajWrap.appendChild(btnPrev);
+  trajWrap.appendChild(btnNext);
+
+  function updateArrows() {
+    const minX = getMinX();
+    const atStart = curX >= -1;
+    const atEnd   = curX <= minX + 1;
+    btnPrev.style.opacity = atStart ? '.28' : '1';
+    btnNext.style.opacity = atEnd   ? '.28' : '1';
+    btnPrev.disabled = atStart;
+    btnNext.disabled = atEnd;
+  }
+
+  btnPrev.addEventListener('click', () => {
+    pauseAuto(); applyX(curX + CARD_W * 2); updateArrows(); scheduleResume();
+  });
+  btnNext.addEventListener('click', () => {
+    pauseAuto(); applyX(curX - CARD_W * 2); updateArrows(); scheduleResume();
+  });
+
+  updateArrows();
+
+  /* ─ Auto-scroll suave ─ */
+  let autoDir = -1;            /* -1 = esquerda */
+  const AUTO_SPEED = 0.45;    /* px por frame (~27px/s a 60fps) */
+  let autoActive = true;
+  let resumeTimer = null;
+
+  function pauseAuto() {
+    autoActive = false;
+    clearTimeout(resumeTimer);
+  }
+  function scheduleResume() {
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(() => { autoActive = true; }, 2800);
+  }
+
+  outer.addEventListener('mousedown',  pauseAuto,      { capture: true });
+  outer.addEventListener('touchstart', pauseAuto,      { capture: true, passive: true });
+  window.addEventListener('mouseup',   scheduleResume);
+  outer.addEventListener('touchend',   scheduleResume);
+
+  (function autoLoop() {
+    if (autoActive && !isDrag) {
+      const minX = getMinX();
+      let next = curX + AUTO_SPEED * autoDir;
+      if (next <= minX) { next = minX; autoDir =  1; }
+      if (next >= 0)    { next = 0;    autoDir = -1; }
+      applyX(next);
+    }
+    updateArrows();
+    requestAnimationFrame(autoLoop);
+  })();
+
+})();
+
+/* ══════════════════════════════════════════
+   CARROSSEL DE DEPOIMENTOS — NOVO DESIGN
+══════════════════════════════════════════ */
+(function buildDepoimentos() {
+
+  const DEPOS = [
+    { texto: 'Profissional excepcional, além de ser uma pessoa incrível, se preocupa com seus pacientes como se fossem seus filhos.', autor: 'Sheila Santos' },
+    { texto: 'Saí com resultados alcançados e muito feliz. A Paola me deu todo o suporte, atenção e carinho — uma excelente profissional.', autor: 'Abilene Martins' },
+    { texto: 'Graças à Paola, minha mãe superou a Síndrome de Guillain-Barré. Muito obrigado por tudo — sempre seremos gratos.', autor: 'Matheus Guedes' },
+    { texto: 'Profissional dedicada e muito atenta. Sempre solícita para ajudar meu filho em todos os sentidos!', autor: 'Stephanie Montone' },
+    { texto: 'Emocionante a evolução do meu filho depois que começou as terapias. Super indico!', autor: 'Luciene Fernandes' },
+    { texto: 'Sempre atualizada e atenta às demandas da criança e da família. Mais do que recomendo!', autor: 'Nathalia Trasmonte' },
+  ];
+
+  const COLORS = ['#7B5EA7', '#5C4080', '#C9A84C', '#3BAED9', '#a87930', '#7B5EA7'];
+  const TIMER_DURATION = 3800;
+
+  const frontCard = document.getElementById('depoFrontCard');
+  const timerBar  = document.getElementById('depoTimerBar');
+  const nextBtn   = document.getElementById('depoNextBtn');
+  const counter   = document.getElementById('depoCounter');
+  if (!frontCard || !timerBar || !nextBtn || !counter) return;
+
+  let currentIndex = 0;
+  let autoTimer    = null;
+  let isAnimating  = false;
+
+  function getInitials(name) {
+    return name.split(' ').map(n => n[0]).slice(0, 2).join('');
+  }
+
+  function updateCounter() {
+    counter.textContent = `${currentIndex + 1} / ${DEPOS.length}`;
+  }
+
+  function renderCard(d, color) {
+    const googleSvg =
+      `<svg xmlns=”http://www.w3.org/2000/svg” width=”13” height=”13” viewBox=”0 0 24 24”>` +
+      `<path fill=”#4285F4” d=”M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z”/>` +
+      `<path fill=”#34A853” d=”M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z”/>` +
+      `<path fill=”#FBBC05” d=”M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z”/>` +
+      `<path fill=”#EA4335” d=”M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z”/>` +
+      `</svg>`;
+    frontCard.innerHTML =
+      `<div class=”depo-mini-top”>` +
+      `<div class=”depo-mini-line”></div>` +
+      `<span class=”depo-stars-new”>★★★★★</span>` +
+      `</div>` +
+      `<p class=”depo-mini-text”>“${d.texto}”</p>` +
+      `<div class=”depo-mini-author”>` +
+      `<span class=”depo-mini-dash”>—</span>` +
+      `<span class=”depo-mini-name”>${d.autor}</span>` +
+      `<div class=”depo-google-badge”>${googleSvg} Google Reviews</div>` +
+      `</div>`;
+  }
+
+  function startTimer() {
+    clearTimeout(autoTimer);
+    timerBar.style.transition = 'none';
+    timerBar.style.width = '0%';
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      timerBar.style.transition = `width ${TIMER_DURATION}ms linear`;
+      timerBar.style.width = '100%';
+    }));
+    autoTimer = setTimeout(() => advance(1), TIMER_DURATION);
+  }
+
+  function stopTimer() {
+    clearTimeout(autoTimer);
+    timerBar.style.transition = 'none';
+  }
+
+  function advance(dir) {
+    if (isAnimating) return;
+    isAnimating = true;
+    stopTimer();
+
+    const outX = dir > 0 ? '-36px' : '36px';
+    const inX  = dir > 0 ?  '36px' : '-36px';
+
+    frontCard.style.transition = 'opacity .28s ease, transform .28s ease';
+    frontCard.style.opacity    = '0';
+    frontCard.style.transform  = `translateX(${outX})`;
+
+    setTimeout(() => {
+      currentIndex = (currentIndex + dir + DEPOS.length) % DEPOS.length;
+      renderCard(DEPOS[currentIndex], COLORS[currentIndex % COLORS.length]);
+      updateCounter();
+
+      frontCard.style.transition = 'none';
+      frontCard.style.opacity    = '0';
+      frontCard.style.transform  = `translateX(${inX})`;
+
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        frontCard.style.transition = 'opacity .42s ease, transform .42s cubic-bezier(.25,.8,.25,1)';
+        frontCard.style.opacity    = '1';
+        frontCard.style.transform  = 'translateX(0)';
+
+        setTimeout(() => { isAnimating = false; startTimer(); }, 440);
+      }));
+    }, 290);
+  }
+
+  nextBtn.addEventListener('click', () => advance(1));
+
+  /* Pausa automática ao passar o mouse sobre o card */
+  const depoRight = document.querySelector('.depo-right');
+  if (depoRight) {
+    depoRight.addEventListener('mouseenter', stopTimer);
+    depoRight.addEventListener('mouseleave', () => { if (!isAnimating) startTimer(); });
+  }
+
+  /* Swipe touch no card */
+  let touchStartX = 0;
+  frontCard.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  frontCard.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) advance(diff > 0 ? 1 : -1);
+  });
+
+  /* Init */
+  renderCard(DEPOS[0], COLORS[0]);
+  updateCounter();
+  setTimeout(startTimer, 1200);
+
+})();
+</script>
+</body>
+</html>
